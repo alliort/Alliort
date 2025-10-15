@@ -37,18 +37,19 @@
      #shortsBtn {
       margin-top: 20px;
       padding: 10px 15px;
-      background-color: #3b3b3b;
+      background-color: #ff69b4;
       color: #fff;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      transition: margin-left 0.3s; /* animate movement */
       display: block;
-      margin-left: 0; /* start position */
+      position: relative;             /* make it movable */
+      left: 0;                        /* start position */
+      transition: left 0.3s;          /* animate movement */
     }
 
     #sidebar.open #shortsBtn {
-      margin-left: 10px; /* moves when sidebar has "open" class */
+      left: 10px;                     /* moves right when sidebar opens */
     }
 
     #toggleSidebar {
