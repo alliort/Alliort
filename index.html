@@ -55,12 +55,11 @@
 
     /* islands */
   .videos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    align-items: flex-start;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  justify-items: center; /* centers each island */
+}
 
 
   .island {
