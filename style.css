@@ -93,3 +93,8 @@ iframe {
   margin-bottom: 15px;
   border-radius: 10px;
 }
+
+#shorts-list a {
+  display: block;
+  text-decoration: none;
+}
