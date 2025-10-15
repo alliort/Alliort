@@ -1,1 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #000;
+}
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0044cc;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  height: 40px;
+}
+
+header input {
+  width: 200px;
+  padding: 6px;
+  border: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.video img {
+  width: 100%;
+  display: block;
+}
+
+footer {
+  background: #0044cc;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
