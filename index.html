@@ -56,10 +56,11 @@
     /* islands */
   .videos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, 350px); /* exactly 3 columns */
   gap: 30px;
-  justify-items: center; /* centers each island */
+  justify-content: center; /* centers the whole grid */
 }
+
 
 
   .island {
