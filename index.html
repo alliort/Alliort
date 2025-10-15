@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AlliortVR Island Vids 😎</title>
+  <title>Alliort.com</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <style>
     body {
@@ -37,7 +37,7 @@
       position: fixed;
       top: 20px;
       left: 20px;
-      background-color: #ff69b4;
+      background-color: #3b3b3b;
       color: #fff;
       border: none;
       border-radius: 8px;
@@ -65,7 +65,7 @@
     .island {
       background-color: #2a2a2a;
       border-radius: 15px;
-      box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+      box-shadow: 0 0 20px rgba(25, 25, 25, 0.3);
       padding: 20px;
       width: 350px;
       transition: transform 0.2s, box-shadow 0.2s;
@@ -73,40 +73,45 @@
 
     .island:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 25px rgba(255, 105, 180, 0.5);
+      box-shadow: 0 0 25px rgba(25, 25, 25, 0.5);
     }
 
     iframe { width: 100%; height: 200px; border-radius: 10px; }
     .youtube-btn { margin-top: 20px; padding: 12px 24px; background-color: #ff0000; color: #fff; border: none; border-radius: 8px; cursor: pointer; }
-    .youtube-btn:hover { background-color: #cc0000; }
+    .youtube-btn:hover { background-color: #ff0033; }
   </style>
 </head>
 <body>
 
-  <button id="toggleSidebar">🎬 Shorts</button>
+  <button id="toggleSidebar">📱 Shorts</button>
 
   <div id="sidebar">
-    <h2>My Shorts 🎥</h2>
+    <h2>My YouTube shorts!</h2>
     <div id="shorts-list"></div>
   </div>
 
-  <h1>AlliortVR Island Vids 😏</h1>
-  <p>Welcome to my video islands 🌴</p>
+  <h1>Welcome to the Alliort website!</h1>
+  <p>Watch my videos!</p>
 
   <div class="videos">
     <div class="island">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
-      <p>Video 1 🌺</p>
+      <iframe src="https://www.youtube.com/embed/ngcJWMeqxUw" frameborder="0" allowfullscreen></iframe>
+      <p>Hey it's me, Alliort</p>
     </div>
     <div class="island">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-      <p>Video 2 🌸</p>
+      <iframe src="https://www.youtube.com/embed/b-BTrWIYaB8" frameborder="0" allowfullscreen></iframe>
+      <p>LAST VIDEO OF PREVIOUS UPDATE!</p>
+    </div>
+      </div>
+    <div class="island">
+      <iframe src="https://www.youtube.com/embed/0NaVF5quUas" frameborder="0" allowfullscreen></iframe>
+      <p>Gorilla Tag's 2025 Halloween update!</p>
     </div>
   </div>
 
-  <h2>Check out my channel!</h2>
+  <h2>Check out my YouTube channel!</h2>
   <a href="https://www.youtube.com/@AlliortVR" target="_blank">
-    <button class="youtube-btn">Visit my YouTube ❤️</button>
+    <button class="youtube-btn">▶ My YouTube channel!</button>
   </a>
 
   <script>
@@ -118,9 +123,8 @@
     });
 
     const shorts = [
-      "SHORT_ID_1",
-      "SHORT_ID_2",
-      "SHORT_ID_3"
+      "0QYAzFG2_-Q",
+      "zcMYjCVba2w"
     ];
 
     const container = document.getElementById('shorts-list');
