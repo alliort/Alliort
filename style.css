@@ -20,3 +20,28 @@ h3 {
 p {
     color: #ffffff;
 }
+
+.video-container {
+    width: 560px;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 0;
+    background-color: #2e2e2e;
+    border: 2px solid #6a6a6a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-button {
+    background-color: #8470ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.my-button:hover {
+    background-color: #9a8fff;
+}
