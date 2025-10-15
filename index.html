@@ -1,43 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Alliort.com</title>
+  <title>AlliortVR Island Vids 😎</title>
   <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    h1 { color: #ff69b4; text-align: center; }
+    p { text-align: center; }
+
+    /* sidebar */
+    #sidebar {
+      position: fixed;
+      left: -320px;
+      top: 0;
+      width: 300px;
+      height: 100%;
+      background-color: #2a2a2a;
+      padding: 20px;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+      overflow-y: auto;
+      transition: left 0.3s;
+      z-index: 1000;
+    }
+
+    #sidebar.open { left: 0; }
+
+    #toggleSidebar {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #ff69b4;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 15px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    #shorts-list img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    /* islands */
+    .videos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .island {
+      background-color: #2a2a2a;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+      padding: 20px;
+      width: 350px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .island:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(255, 105, 180, 0.5);
+    }
+
+    iframe { width: 100%; height: 200px; border-radius: 10px; }
+    .youtube-btn { margin-top: 20px; padding: 12px 24px; background-color: #ff0000; color: #fff; border: none; border-radius: 8px; cursor: pointer; }
+    .youtube-btn:hover { background-color: #cc0000; }
+  </style>
 </head>
 <body>
-  <button id="toggleSidebar">📱 Shorts</button>
+
+  <button id="toggleSidebar">🎬 Shorts</button>
 
   <div id="sidebar">
-    <h2>My YouTube shorts!</h2>
-    <div id="shorts-list">
-      <!-- your shorts go here -->
-    </div>
+    <h2>My Shorts 🎥</h2>
+    <div id="shorts-list"></div>
   </div>
 
-  <h1>Welcome to the Alliort website!</h1>
-  <p>Watch my videos!</p>
+  <h1>AlliortVR Island Vids 😏</h1>
+  <p>Welcome to my video islands 🌴</p>
 
   <div class="videos">
     <div class="island">
       <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
-      <p>Hey it's me, Alliort</p>
+      <p>Video 1 🌺</p>
     </div>
     <div class="island">
       <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-      <p>LAST VIDEO OF PREVIOUS UPDATE!</p>
-    </div>
-       <div class="island">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-      <p>Gorilla Tag's 2025 Halloween update!</p>
+      <p>Video 2 🌸</p>
     </div>
   </div>
 
-  <h2>Check out my YouTube channel!</h2>
+  <h2>Check out my channel!</h2>
   <a href="https://www.youtube.com/@AlliortVR" target="_blank">
-    <button class="youtube-btn">▶ My YouTube channel!</button>
+    <button class="youtube-btn">Visit my YouTube ❤️</button>
   </a>
 
-  <script src="script.js"></script>
+  <script>
+    const toggleBtn = document.getElementById('toggleSidebar');
+    const sidebar = document.getElementById('sidebar');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+    });
+
+    const shorts = [
+      "SHORT_ID_1",
+      "SHORT_ID_2",
+      "SHORT_ID_3"
+    ];
+
+    const container = document.getElementById('shorts-list');
+    shorts.forEach(id => {
+      const link = document.createElement('a');
+      link.href = `https://youtu.be/${id}`;
+      link.target = "_blank";
+
+      const img = document.createElement('img');
+      img.src = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+
+      link.appendChild(img);
+      container.appendChild(link);
+    });
+  </script>
 </body>
 </html>
