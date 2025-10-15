@@ -18,23 +18,21 @@
     /* sidebar */
     #sidebar {
       position: fixed;
-      left: -320px; /* hidden by default */
       top: 0;
-      width: 300px;
+      left: -330px;         /* hidden offscreen */
+      width: 280px;
       height: 100%;
       background-color: #2a2a2a;
       padding: 20px;
       box-shadow: 2px 0 10px rgba(0,0,0,0.5);
-      overflow-y: auto;
       transition: left 0.3s;
-      z-index: 1000;
     }
 
     #sidebar.open {
       left: 0;
     }
 
-     #shortsBtn {
+    #shortsBtn {
       margin-top: 20px;
       padding: 10px 15px;
       background-color: #ff69b4;
@@ -43,13 +41,13 @@
       border-radius: 8px;
       cursor: pointer;
       display: block;
-      position: relative;             /* make it movable */
-      left: 0;                        /* start position */
-      transition: left 0.3s;          /* animate movement */
+      position: relative;
+      left: -20px;          /* start slightly left inside sidebar */
+      transition: left 0.3s;
     }
 
     #sidebar.open #shortsBtn {
-      left: 10px;                     /* moves right when sidebar opens */
+      left: 0;              /* slides to normal position when sidebar opens */
     }
 
     #toggleSidebar {
@@ -143,10 +141,11 @@
   <button id="toggleSidebar">📱 Shorts</button>
 
   <div id="sidebar">
-    <h2>My YouTube shorts</h2>
+    <h2>My YouTube Shorts</h2>
     <div id="shorts-list"></div>
-    <button id="toggleSidebar" class="sidebar-btn">📱 Shorts</button>
-  </div>
+    <button id="shortsBtn">📱 Shorts</button>
+</div>
+<button id="toggleSidebar">Toggle Sidebar</button>
 
   <h1>Welcome to the Alliort website!</h1>
   <p>Watch my videos!</p>
