@@ -55,21 +55,15 @@
     /* islands */
   .videos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); /* flexible columns */
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 30px;
-    justify-items: center; /* centers each island in its column */
+    justify-items: center;
     align-items: start;
-    max-width: 1200px; /* prevents them from stretching too wide */
-    margin: 0 auto; /* centers the grid container on the page */
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-
-
-
   .island {
-    width: 100%; /* takes full width of its grid column */
-    max-width: 360px; /* ensures consistent sizing */
-    height: 320px;
     background: linear-gradient(145deg, #2a2a2a, #3a3a3a);
     border-radius: 20px;
     padding: 15px;
@@ -77,15 +71,24 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
 
-
-
+  .island:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 35px rgba(255,105,180,0.7);
+  }
+    
   .island iframe {
     width: 100%;
     height: 200px;
     border-radius: 12px;
     margin-bottom: 10px;
+  }
+
+  .island-wrapper {
+    width: 100%;
+    max-width: 360px;
   }
 
   iframe {
@@ -109,20 +112,26 @@
   <h1>Welcome to the Alliort website!</h1>
   <p>Watch my videos!</p>
 
-  <div class="videos">
+ <div class="videos">
+  <div class="island-wrapper">
     <div class="island">
       <iframe src="https://www.youtube.com/embed/ngcJWMeqxUw" frameborder="0" allowfullscreen></iframe>
       <p>Hey it's me, Alliort</p>
-    </div>
+      </div>
+  </div>
+    <div class="island-wrapper">
+      <div class="island">
+        <iframe src="https://www.youtube.com/embed/b-BTrWIYaB8" frameborder="0" allowfullscreen></iframe>
+        <p>LAST VIDEO OF PREVIOUS UPDATE!</p>
+     </div>
+  </div>
+  <div class="island-wrapper">
     <div class="island">
-      <iframe src="https://www.youtube.com/embed/b-BTrWIYaB8" frameborder="0" allowfullscreen></iframe>
-      <p>LAST VIDEO OF PREVIOUS UPDATE!</p>
-    </div>
-    <div class="island">
-      <iframe src="https://www.youtube.com/embed/0NaVF5quUas" frameborder="0" allowfullscreen></iframe>
-      <p>Gorilla Tag's 2025 Halloween update!</p>
+     <iframe src="https://www.youtube.com/embed/0NaVF5quUas" frameborder="0" allowfullscreen></iframe>
+     <p>Gorilla Tag's 2025 Halloween update!</p>
     </div>
   </div>
+</div>
 
 
   <h2>Check out my YouTube channel!</h2>
