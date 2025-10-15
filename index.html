@@ -36,6 +36,14 @@
       background-color: #655dff;
     }
 
+    .youtube-btn {
+  background-color: #ff0000;
+}
+
+.youtube-btn:hover {
+  background-color: #FF0033;
+}
+
     iframe {
       margin-top: 30px;
       border-radius: 10px;
@@ -53,14 +61,15 @@
 
   <button onclick="alert('This might not exist.')">       </button>
 
-  <div class="channel-section">
-    <h2>Check out my YouTube channel!</h2>
+ <div class="channel-section">
+  <h2>Check out my YouTube channel!</h2>
 
-    <!-- Button below text -->
-    <a href="https://www.youtube.com/@alliortvr" target="_blank">
-      <button>My YouTube channel!</button>
-    </a>
-  </div>
+  <!-- red youtube button -->
+  <a href="https://www.youtube.com/@alliortvr" target="_blank">
+    <button class="youtube-btn">My YouTube channel!</button>
+  </a>
+</div>
+
 
   <script>
     function showAlert() {
