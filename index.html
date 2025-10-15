@@ -34,20 +34,21 @@
       left: 0;
     }
 
-    #shortsBtn {
+     #shortsBtn {
       margin-top: 20px;
       padding: 10px 15px;
-      background-color: #ff69b4;
+      background-color: #3b3b3b;
       color: #fff;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      transition: transform 0.3s; /* animate movement */
-      display: block; /* stays normal size inside sidebar */
+      transition: margin-left 0.3s; /* animate movement */
+      display: block;
+      margin-left: 0; /* start position */
     }
 
     #sidebar.open #shortsBtn {
-      transform: translateX(10px); /* just slide a little when sidebar opens */
+      margin-left: 10px; /* moves when sidebar has "open" class */
     }
 
     #toggleSidebar {
