@@ -34,7 +34,7 @@
       left: 0;
     }
 
-    .sidebar-btn {
+    #shortsBtn {
       margin-top: 20px;
       padding: 10px 15px;
       background-color: #ff69b4;
@@ -42,17 +42,12 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      transition: transform 0.3s;
-      display: inline-block;  /* changed from block to inline-block */
-      width: auto;            /* remove full width */
+      transition: transform 0.3s; /* animate movement */
+      display: block; /* stays normal size inside sidebar */
     }
 
-#sidebar.open .sidebar-btn {
-  transform: translateX(10px); /* moves a bit when sidebar opens */
-}
-
-    #sidebar.open .sidebar-btn {
-      transform: translateX(10px); /* moves a bit to the right when sidebar opens */
+    #sidebar.open #shortsBtn {
+      transform: translateX(10px); /* just slide a little when sidebar opens */
     }
 
     #toggleSidebar {
