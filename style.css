@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background: #fffff;
   color: #000;
 }
 
@@ -9,7 +9,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #0044cc;
+  background: #cacaca;
   padding: 10px 20px;
   color: white;
 }
