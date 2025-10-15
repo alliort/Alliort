@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #fffff;
+  background: #ffffff;
   color: #000;
 }
 
@@ -9,7 +9,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #cacaca;
+  background: #ffffff;
   padding: 10px 20px;
   color: white;
 }
@@ -28,19 +28,16 @@ main {
   padding: 20px;
 }
 
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 15px;
-}
-
-.video img {
+video {
   width: 100%;
+  max-width: 720px;
   display: block;
+  margin-top: 10px;
+  border: 1px solid #000;
 }
 
 footer {
-  background: #cacaca;
+  background: #eaeaea;
   color: white;
   text-align: center;
   padding: 10px;
