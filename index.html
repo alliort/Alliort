@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>alliort.com</title>
+  <title>Alliort.com</title></title>
   <style>
     body {
       background-color: #222;
@@ -29,6 +29,7 @@
       border-radius: 8px;
       cursor: pointer;
       font-size: 1em;
+      margin-top: 10px;
     }
 
     button:hover {
@@ -39,25 +40,30 @@
       margin-top: 30px;
       border-radius: 10px;
     }
+
+    .channel-section {
+      margin-top: 50px;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to the official Alliort website!</h1>
-  <p>This is a GitHub website as you may have already seen.</p>
+  <h1>Welcome to the Alliort website!</h1>
+  <p>This is a free GitHub domain!</p>
 
-  <button onclick="alert('This button literally does nothing (real)')">Clickity Clack</button>
+  <button onclick="alert('This might not exist.')">click me</button>
 
-  <!-- YouTube Embed -->
-  <h2>check out my channel!</h2>
-<iframe width="560" height="315" 
-  src="https://www.youtube.com/embed?listType=user_uploads&list=AlliOrTVR" 
-  title="YouTube channel embed" frameborder="0" 
-  allowfullscreen>
-</iframe>
+  <div class="channel-section">
+    <h2>Check out my YouTube channel!</h2>
+
+    <!-- Button below text -->
+    <a href="https://www.youtube.com/@alliortvr" target="_blank">
+      <button>My YouTube channel!</button>
+    </a>
+  </div>
 
   <script>
     function showAlert() {
-      alert("you clicked me hehe 😜");
+      alert("This button *should* send you to my channel.");
     }
   </script>
 </body>
