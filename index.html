@@ -18,7 +18,7 @@
     /* sidebar */
     #sidebar {
       position: fixed;
-      left: -320px;
+      left: -330px;
       top: 0;
       width: 300px;
       height: 100%;
@@ -45,6 +45,8 @@
       z-index: 1001;
     }
 
+    #toggleSidebar.open { left: 320 }
+
     #shorts-list img {
       width: 100%;
       border-radius: 10px;
@@ -67,7 +69,7 @@
     background-color: #2a2a2a;
     border-radius: 20px;
     padding: 15px;
-    box-shadow: 0 0 25px rgba(255,105,180,0.5);
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -76,7 +78,7 @@
 
   .island:hover {
     transform: translateY(-8px);
-    box-shadow: 0 0 35px rgba(255,105,180,0.7);
+    box-shadow: 0 0 35px rgba(0,0,0,0.3);
   }
     
   .island iframe {
