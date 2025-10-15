@@ -18,7 +18,7 @@
     /* sidebar */
     #sidebar {
       position: fixed;
-      left: -330px;
+      left: -320px; /* hidden by default */
       top: 0;
       width: 300px;
       height: 100%;
@@ -30,7 +30,26 @@
       z-index: 1000;
     }
 
-    #sidebar.open { left: 0; }
+    #sidebar.open {
+      left: 0;
+    }
+
+    .sidebar-btn {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #3b3b3b;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s;
+      display: block;
+      width: 100%;
+    }
+
+    #sidebar.open .sidebar-btn {
+      transform: translateX(10px); /* moves a bit to the right when sidebar opens */
+    }
 
     #toggleSidebar {
       position: fixed;
@@ -123,8 +142,9 @@
   <button id="toggleSidebar">📱 Shorts</button>
 
   <div id="sidebar">
-    <h2>My YouTube shorts!</h2>
+    <h2>My YouTube shorts</h2>
     <div id="shorts-list"></div>
+    <button id="toggleSidebar" class="sidebar-btn">📱 Shorts</button>
   </div>
 
   <h1>Welcome to the Alliort website!</h1>
