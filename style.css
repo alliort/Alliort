@@ -28,7 +28,9 @@ p {
     padding: 10px;
     background-color: #2b2b2b;
     border: 2px solid #3c3c3c;
+    border-radius: 15px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
@@ -36,21 +38,31 @@ p {
 }
 
 .video-island:hover {
-    transform: translateY(-5px);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3); 
+    transform: scale(1.05);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
 
-custom-button {
+.video-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.custom-button {
     background-color: #8470ff;
     color: white;
     border: none;
     padding: 12px 24px;
     font-size: 16px;
-    cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.2s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .custom-button:hover {
     background-color: #9a8fff;
+    transform: scale(1.05);
 }
