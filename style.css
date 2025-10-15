@@ -5,3 +5,19 @@ body {
     background-color: #1e1e1e;
     color: #ffffff;
 }
+
+h1 {
+    color: #feaafe;
+}
+
+h2 {
+    color: #fc24fa;
+}
+
+h3 {
+    color: #cacaca;
+}
+
+p {
+    color: #ffffff;
+}
