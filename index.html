@@ -96,8 +96,24 @@
     height: 200px; /* same for all */
   }
 
-    .youtube-btn { margin-top: 20px; padding: 12px 24px; background-color: #ff0000; color: #fff; border: none; border-radius: 8px; cursor: pointer; }
-    .youtube-btn:hover { background-color: #ff0033; }
+   .channel-section {
+    text-align: center; /* centers everything inside */
+    margin-top: 40px;   /* space from islands */
+  }
+
+  .youtube-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  .youtube-btn:hover {
+    background-color: #ff0033;
+  }
   </style>
 </head>
 <body>
@@ -134,10 +150,13 @@
 </div>
 
 
+ <div class="channel-section">
   <h2>Check out my YouTube channel!</h2>
   <a href="https://www.youtube.com/@AlliortVR" target="_blank">
     <button class="youtube-btn">▶ My YouTube channel!</button>
   </a>
+</div>
+
 
   <script>
     const toggleBtn = document.getElementById('toggleSidebar');
