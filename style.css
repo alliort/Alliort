@@ -21,27 +21,36 @@ p {
     color: #ffffff;
 }
 
-.video-container {
+.video-island {
     width: 560px;
     max-width: 90%;
     margin: 20px auto;
-    padding: 0;
-    background-color: #2e2e2e;
-    border: 2px solid #6a6a6a;
+    padding: 10px;
+    background-color: #2b2b2b;
+    border: 2px solid #3c3c3c;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.my-button {
+.video-island:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3); 
+}
+
+custom-button {
     background-color: #8470ff;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
     cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
 }
 
-.my-button:hover {
+.custom-button:hover {
     background-color: #9a8fff;
 }
