@@ -1,96 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Alliort.com</title></title>
+  <title>My videos!</title>
   <style>
     body {
       background-color: #1e1e1e;
       color: #fff;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       text-align: center;
       padding: 50px;
     }
 
     h1 {
-      color: #895da6;
-      font-size: 3em;
+      color: #ff69b4;
+      font-size: 2.5em;
+      margin-bottom: 20px;
     }
 
     p {
       font-size: 1.2em;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
-    button {
-      padding: 10px 20px;
-      background-color: #4e5da6;
+    .videos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .island {
+      background-color: #2a2a2a;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+      padding: 20px;
+      width: 350px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .island:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(255, 105, 180, 0.5);
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    .youtube-btn {
+      margin-top: 40px;
+      padding: 12px 24px;
+      background-color: #ff0000;
       color: #fff;
       border: none;
       border-radius: 8px;
       cursor: pointer;
       font-size: 1em;
-      margin-top: 10px;
+      transition: background 0.2s;
     }
 
-    button:hover {
-      background-color: #655dff;
-    }
-
-    .youtube-btn {
-  background-color: #ff0000;
-}
-
-.youtube-btn:hover {
-  background-color: #FF0033;
-}
-
-    iframe {
-      margin-top: 30px;
-      border-radius: 10px;
-    }
-
-    .channel-section {
-      margin-top: 50px;
+    .youtube-btn:hover {
+      background-color: #cc0000;
     }
   </style>
 </head>
-  <link rel="icon" href="favicon.png" type="image/png">
 <body>
   <h1>Welcome to the Alliort website!</h1>
-  <p>This is a free GitHub domain!</p>
-
-  <button onclick="alert('You clicked the button!')">This doesn't do anything.</button>
   <p>Watch my videos!</p>
 
-  <!-- put each video iframe right here -->
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/ngcJWMeqxUw"
-    frameborder="0" allowfullscreen>
-  </iframe>
+  <div class="videos">
+    <div class="island">
+      <iframe src="https://www.youtube.com/embed/ngcJWMeqxUw" frameborder="0" allowfullscreen></iframe>
+      <p>Hey it's me, Alliort</p>
+    </div>
 
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/b-BTrWIYaB8"
-    frameborder="0" allowfullscreen>
-  </iframe>
+    <div class="island">
+      <iframe src="https://www.youtube.com/embed/b-BTrWIYaB8" frameborder="0" allowfullscreen></iframe>
+      <p>LAST VIDEO OF PREVIOUS UPDATE!</p>
+    </div>
 
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/0NaVF5quUas"
-    frameborder="0" allowfullscreen>
-  </iframe>
- <div class="channel-section">
+    <div class="island">
+      <iframe src="https://www.youtube.com/embed/0NaVF5quUas" frameborder="0" allowfullscreen></iframe>
+      <p>Gorilla Tag's 2025 Halloween update!</p>
+    </div>
+  </div>
+
   <h2>Check out my YouTube channel!</h2>
-
-  <!-- red youtube button -->
-  <a href="https://www.youtube.com/@alliortvr" target="_blank">
+  <a href="https://www.youtube.com/@AlliortVR" target="_blank">
     <button class="youtube-btn">▶ My YouTube channel!</button>
   </a>
-</div>
-
-
-  <script>
-    function showAlert() {
-      alert("This button *should* send you to my channel.");
-    }
-  </script>
 </body>
 </html>
