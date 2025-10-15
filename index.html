@@ -37,15 +37,19 @@
     .sidebar-btn {
       margin-top: 20px;
       padding: 10px 15px;
-      background-color: #3b3b3b;
+      background-color: #ff69b4;
       color: #fff;
       border: none;
       border-radius: 8px;
       cursor: pointer;
       transition: transform 0.3s;
-      display: block;
-      width: 100%;
+      display: inline-block;  /* changed from block to inline-block */
+      width: auto;            /* remove full width */
     }
+
+#sidebar.open .sidebar-btn {
+  transform: translateX(10px); /* moves a bit when sidebar opens */
+}
 
     #sidebar.open .sidebar-btn {
       transform: translateX(10px); /* moves a bit to the right when sidebar opens */
