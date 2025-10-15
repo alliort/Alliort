@@ -22,15 +22,13 @@ p {
 }
 
 .video-island {
-    width: 560px;
-    max-width: 90%;
+    width: 350px;
     padding: 10px;
     background-color: #2b2b2b;
     border: 2px solid #3c3c3c;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -43,10 +41,10 @@ p {
 
 .video-title {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    color: #ffffff;
     text-align: center;
+    color: #aaaaaa;
 }
 
 .video-container {
@@ -54,6 +52,14 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    padding: 20px;
+}
+
+.video-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
     padding: 20px;
 }
 
