@@ -84,32 +84,3 @@ p {
   height: 100%;
   border-radius: 10px;
 }
-
-.custom-button {
-    background-color: #8470ff;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 12px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
-    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
-}
-
-.custom-button:hover {
-    background-color: #9a8fff;
-    box-shadow: 2px 4px 12px rgba(0,0,0,0.5);
-}
-
-@keyframes click-bounce {
-    0% { transform: scale(1.05); }
-    50% { transform: scale(0.9); }
-    100% { transform: scale(1.05); }
-}
-
-.custom-button:active {
-    animation: click-bounce 0.2s forwards;
-}
