@@ -227,4 +227,10 @@ p {
   height: 2px;
   background-color: #3c3c3c !important;
   margin: 40px 0;
+
+@media (max-width: 480px) {
+  .short-island {
+    flex: 1 1 45%;   /* two per row on tiny screens */
+  }
+}
 }
