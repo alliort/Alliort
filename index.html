@@ -47,7 +47,7 @@
 <p>(sends you to my channel)</p>
 <div class="divider"></div>
     
- <button id="toggle-shorts">Show/Hide Shorts</button>
+ <button id="toggle-shorts">Hide Shorts</button>
   <h2 class="shorts-title">My YouTube shorts!</h2>
   <div class="shorts-container">
     <div class="short-island">
@@ -79,19 +79,24 @@
   </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const button = document.getElementById('toggle-shorts');
-  const shortsTitle = document.querySelector('.shorts-title');
-  const shortsContainer = document.querySelector('.shorts-container');
+const button = document.getElementById('toggle-shorts');
+const shortsTitle = document.querySelector('.shorts-title');
+const shortsContainer = document.querySelector('.shorts-container');
 
-  button.addEventListener('click', () => {
-    const isVisible = window.getComputedStyle(shortsContainer).display !== 'none';
-    shortsContainer.style.display = isVisible ? 'none' : 'flex';
-    shortsTitle.style.display = isVisible ? 'none' : 'block';
-  });
+button.addEventListener('click', () => {
+  const isVisible = window.getComputedStyle(shortsContainer).display !== 'none';
+  
+  if (isVisible) {
+    shortsContainer.style.display = 'none';
+    shortsTitle.style.display = 'none';
+    button.textContent = 'Show Shorts';
+  } else {
+    shortsContainer.style.display = 'flex';
+    shortsTitle.style.display = 'block';
+    button.textContent = 'Hide Shorts';
+  }
 });
 </script>
-
     
 </body>
 </html>
