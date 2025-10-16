@@ -170,24 +170,30 @@ p {
   gap: 16px;
   padding: 10px;
   box-sizing: border-box;
+  overflow: visible;
+  transform: translateZ(0);
 }
 
 .short-island {
   flex: 0 1 150px;
-  background-color: #ececff;
+  background-color: #2b2b2b;
   padding: 8px;
   border-radius: 10px;
   text-align: center;
 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
   transform: scale(1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  will-change: transform, box-shadow;
 }
 
 .short-island:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
+
 .short-island iframe {
   width: 100%;
   aspect-ratio: 9 / 16;
