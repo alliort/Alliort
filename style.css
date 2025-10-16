@@ -167,11 +167,9 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  gap: 12px;
   padding: 10px;
   box-sizing: border-box;
-  overflow: visible;
-  transform: translateZ(0);
 }
 
 .short-island {
@@ -180,13 +178,13 @@ p {
   padding: 8px;
   border-radius: 10px;
   text-align: center;
-
   transform: scale(1);
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
   will-change: transform, box-shadow;
+  flex: 0 1 150px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .short-island:hover {
