@@ -41,13 +41,16 @@
 <script>
 const btn = document.getElementById('myButton');
 
-btn.addEventListener('click', () => {
+btn.addEventListener('mousedown', () => {
     btn.style.transform = 'scale(0.9)';
-    btn.style.transition = 'transform 0.1s ease';
-    
-    setTimeout(() => {
-        btn.style.transform = 'scale(1.05)';
-    }, 100);
+});
+
+btn.addEventListener('mouseup', () => {
+    btn.style.transform = 'scale(1.05)';
+});
+
+btn.addEventListener('mouseleave', () => {
+    btn.style.transform = 'scale(1.05)';
 });
 </script>
 
