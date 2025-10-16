@@ -41,16 +41,26 @@
 <script>
 const btn = document.getElementById('myButton');
 
-btn.addEventListener('mousedown', () => {
-    btn.style.transform = 'scale(0.9)';
-});
+let isHover = false;
 
-btn.addEventListener('mouseup', () => {
-    btn.style.transform = 'scale(1.05)';
+// hover detection
+btn.addEventListener('mouseenter', () => {
+    isHover = true;
+    if (!btn.matches(':active')) btn.style.transform = 'scale(1.05)';
 });
 
 btn.addEventListener('mouseleave', () => {
-    btn.style.transform = 'scale(1.05)';
+    isHover = false;
+    if (!btn.matches(':active')) btn.style.transform = 'scale(1)';
+});
+
+// click detection
+btn.addEventListener('mousedown', () => {
+    btn.style.transform = 'scale(0.9)'; // shrink while holding
+});
+
+btn.addEventListener('mouseup', () => {
+    btn.style.transform = isHover ? 'scale(1.05)' : 'scale(1)'; // restore hover or normal
 });
 </script>
 
