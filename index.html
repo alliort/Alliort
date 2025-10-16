@@ -89,12 +89,23 @@ button.addEventListener('click', () => {
   visible = !visible;
 
   if (visible) {
-    shortsContainer.classList.remove('hidden');
-    shortsTitle.classList.remove('hidden');
+    shortsContainer.style.display = 'flex';
+    shortsTitle.style.display = 'block';
+    setTimeout(() => {
+      shortsContainer.classList.remove('fade-hidden');
+      shortsTitle.classList.remove('fade-hidden');
+    }, 10);
+
     button.textContent = 'Hide Shorts';
   } else {
-    shortsContainer.classList.add('hidden');
-    shortsTitle.classList.add('hidden');
+    shortsContainer.classList.add('fade-hidden');
+    shortsTitle.classList.add('fade-hidden');
+
+    setTimeout(() => {
+      shortsContainer.style.display = 'none';
+      shortsTitle.style.display = 'none';
+    }, 400);
+
     button.textContent = 'Show Shorts';
   }
 });
