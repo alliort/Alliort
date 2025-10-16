@@ -84,3 +84,22 @@ p {
   height: 100%;
   border-radius: 10px;
 }
+
+.youtube-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.youtube-button:hover {
+    background-color: #ff0033;
+    transform: scale(1.05);
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.3);
+}
