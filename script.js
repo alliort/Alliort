@@ -4,13 +4,12 @@
   const shortsContainer = document.querySelector('.shorts-container');
 
   button.addEventListener('click', () => {
-    // toggle visibility
     if (shortsContainer.style.display === 'none') {
-      shortsContainer.style.display = 'flex'; // show section
-      shortsTitle.style.display = 'block';    // show title
+      shortsContainer.style.display = 'flex';
+      shortsTitle.style.display = 'block';
     } else {
-      shortsContainer.style.display = 'none'; // hide section
-      shortsTitle.style.display = 'none';     // hide title
+      shortsContainer.style.display = 'none';
+      shortsTitle.style.display = 'none';
     }
   });
 </script>
