@@ -151,7 +151,7 @@ p {
 
 .fade-hidden {
   opacity: 0;
-  pointer-events: none; /* prevents interaction while hidden */
+  pointer-events: none;
 }
 
 .shorts-title {
@@ -178,10 +178,13 @@ p {
   padding: 8px;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .short-island:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
 .short-island iframe {
