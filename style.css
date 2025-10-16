@@ -111,8 +111,6 @@ p {
     border-radius: 12px;
 }
 
-
-
 #toggle-shorts {
   display: inline-block;
   background-color: #2b2b2b;
@@ -130,6 +128,19 @@ p {
   background-color: #3c3c3c;
   transform: scale(1.05);
   box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.shorts-container,
+.shorts-title {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
 }
 
 .shorts-title {
