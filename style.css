@@ -111,6 +111,28 @@ p {
     border-radius: 12px;
 }
 
+#toggle-shorts {
+    all: unset;
+    display: inline-block;
+    text-align: center;
+    background-color: #2b2b2b;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-bottom: 20px;
+}
+
+#toggle-shorts:hover {
+    background-color: #3c3c3c;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+
 .shorts-title {
   text-align: center;
   color: #6a5acd;
