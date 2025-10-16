@@ -132,9 +132,12 @@ p {
   box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
-.shorts-title,
-.shorts-container {
+.shorts-title {
   display: block;
+}
+
+.shorts-container {
+  display: flex;
 }
 
 .shorts-title {
