@@ -83,17 +83,19 @@ const button = document.getElementById('toggle-shorts');
 const shortsTitle = document.querySelector('.shorts-title');
 const shortsContainer = document.querySelector('.shorts-container');
 
+let visible = true;
+
 button.addEventListener('click', () => {
-  const isVisible = window.getComputedStyle(shortsContainer).display !== 'none';
-  
-  if (isVisible) {
-    shortsContainer.style.display = 'none';
-    shortsTitle.style.display = 'none';
-    button.textContent = 'Show Shorts';
-  } else {
-    shortsContainer.style.display = 'flex';
-    shortsTitle.style.display = 'block';
+  visible = !visible;
+
+  if (visible) {
+    shortsContainer.classList.remove('hidden');
+    shortsTitle.classList.remove('hidden');
     button.textContent = 'Hide Shorts';
+  } else {
+    shortsContainer.classList.add('hidden');
+    shortsTitle.classList.add('hidden');
+    button.textContent = 'Show Shorts';
   }
 });
 </script>
