@@ -181,7 +181,7 @@ p {
   text-align: center;
 
   flex: 0 1 150px;
-  max-width: 33%;
+  max-width: 30%;
   min-width: 120px;
 
   transform: scale(1);
@@ -196,12 +196,11 @@ p {
 
 @media (max-width: 480px) {
   .short-island {
-    flex: 0 1 45%;
-    max-width: 45%;
+    flex: 0 1 70%;
+    max-width: 70%;
     min-width: 120px;
   }
 }
-
 .short-island:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
