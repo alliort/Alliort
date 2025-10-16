@@ -113,7 +113,7 @@ p {
 
 .shorts-title {
   text-align: center;
-  color: #6a5acd;
+  color: #2b2b2b;
   font-size: 2rem;
   margin-top: 40px;
   margin-bottom: 10px;
@@ -129,7 +129,7 @@ p {
 }
 
 .short-island {
-  background-color: #2b2b2b;
+  background-color: #6a5acd;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   padding: 10px;
