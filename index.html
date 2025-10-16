@@ -91,10 +91,11 @@ button.addEventListener('click', () => {
   if (visible) {
     shortsContainer.style.display = 'flex';
     shortsTitle.style.display = 'block';
-    setTimeout(() => {
+
+    requestAnimationFrame(() => {
       shortsContainer.classList.remove('fade-hidden');
       shortsTitle.classList.remove('fade-hidden');
-    }, 10);
+    });
 
     button.textContent = 'Hide Shorts';
   } else {
@@ -105,10 +106,8 @@ button.addEventListener('click', () => {
       shortsContainer.style.display = 'none';
       shortsTitle.style.display = 'none';
     }, 400);
-
     button.textContent = 'Show Shorts';
   }
-});
 </script>
     
 </body>
