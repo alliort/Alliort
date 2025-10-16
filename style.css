@@ -230,7 +230,10 @@ p {
 
 @media (max-width: 480px) {
   .short-island {
-    flex: 1 1 45%;   /* two per row on tiny screens */
+    flex: 1 1 calc(50% - 12px);
+    min-width: 120px;
+    max-width: 200px;
   }
+}
 }
 }
