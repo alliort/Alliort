@@ -86,20 +86,22 @@ p {
 }
 
 .youtube-button {
-    background-color: #ff0000;
+    all: unset; /* remove default browser button styles */
+    display: inline-block;
+    text-align: center;
+    background-color: #ff0000; /* non-hovered */
     color: white;
-    border: none;
     padding: 12px 24px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     border-radius: 12px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
     transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
 }
 
 .youtube-button:hover {
-    background-color: #ff0033;
+    background-color: #ff0033; /* hovered */
     transform: scale(1.05);
-    box-shadow: 2px 4px 12px rgba(0,0,0,0.3);
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.5);
 }
