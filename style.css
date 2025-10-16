@@ -172,14 +172,15 @@ p {
   box-sizing: border-box;
 }
 
-.short-island {
+short-island {
   flex: 0 1 150px;
   background-color: #2b2b2b;
   padding: 8px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .short-island:hover {
