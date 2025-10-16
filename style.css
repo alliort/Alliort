@@ -226,4 +226,7 @@ p {
   height: 2px;
   background-color: #3c3c3c !important;
   margin: 30px 0;
+  position: relative;
+  z-index: 9999;
+  display: block;
 }
