@@ -101,7 +101,6 @@ p {
 
 .custom-button:hover {
     background-color: #9a8fff;
-    transform: scale(1.05);
     box-shadow: 2px 4px 12px rgba(0,0,0,0.3);
 }
 
