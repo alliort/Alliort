@@ -89,25 +89,15 @@ button.addEventListener('click', () => {
   visible = !visible;
 
   if (visible) {
-    shortsContainer.style.display = 'flex';
-    shortsTitle.style.display = 'block';
-
-    requestAnimationFrame(() => {
-      shortsContainer.classList.remove('fade-hidden');
-      shortsTitle.classList.remove('fade-hidden');
-    });
-
+    shortsContainer.classList.remove('fade-hidden');
+    shortsTitle.classList.remove('fade-hidden');
     button.textContent = 'Hide Shorts';
   } else {
     shortsContainer.classList.add('fade-hidden');
     shortsTitle.classList.add('fade-hidden');
-
-    setTimeout(() => {
-      shortsContainer.style.display = 'none';
-      shortsTitle.style.display = 'none';
-    }, 400);
     button.textContent = 'Show Shorts';
   }
+});
 </script>
     
 </body>
