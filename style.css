@@ -134,6 +134,12 @@ p {
 .shorts-title {
   opacity: 1;
   transition: opacity 0.4s ease;
+  display: flex;
+}
+
+.fade-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .fade-hidden {
