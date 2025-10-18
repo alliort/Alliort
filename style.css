@@ -171,11 +171,22 @@ p {
   display: block;
 }
 
-.shorts-wrapper {
+.short-video-wrapper {
   width: 100%;
-  padding: 0 10px;
-  box-sizing: border-box;
-  overflow: visible;
+  position: relative;
+  padding-bottom: 177.77%;
+  height: 0;
+}
+
+.short-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  display: block;
 }
 
 .shorts-container {
