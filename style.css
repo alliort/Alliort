@@ -209,6 +209,15 @@ p {
   box-shadow: 0 6px 15px rgba(0,0,0,0.6);
 }
 
+.short-island iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  border: none;
+  border-radius: 8px;
+  display: block;
+}
+
 @media (max-width: 480px) {
   .short-island {
     flex: 0 0 85%;
