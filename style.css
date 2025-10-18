@@ -183,40 +183,37 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
-  overflow: visible;
   width: 100%;
+  padding: 0 10px;
   box-sizing: border-box;
+  overflow: visible;
 }
 
 .short-island {
-  background-color: #2b2b2b !important;
-  border: 2px solid #3c3c3c !important;
-  border-radius: 10px !important;
+  flex: 0 0 240px;
+  max-width: 240px;
+  min-width: 180px;
+  background-color: #2b2b2b;
+  border: 2px solid #3c3c3c;
+  border-radius: 10px;
   text-align: center;
-  flex: 0 1 240px !important;
-  max-width: 280px !important;
-  min-width: 180px !important;
-  transform: scale(1) !important;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5) !important;
-  transition: 
-    transform 0.3s ease, 
-    box-shadow 0.3s ease, 
-    background-color 0.3s ease, 
-    border-color 0.3s ease !important;
+  padding: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .short-island:hover {
-  transform: scale(1.05) !important;
-  background-color: #3c3c3c !important;
-  border-color: #4d4d4d !important;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.6) !important;
+  transform: scale(1.05);
+  background-color: #3c3c3c;
+  border-color: #4d4d4d;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.6);
 }
 
 @media (max-width: 480px) {
   .short-island {
-    flex: 0 1 85% !important;
-    max-width: 85% !important;
-    min-width: 150px !important;
+    flex: 0 0 85%;
+    max-width: 85%;
+    min-width: 150px;
   }
 }
 
