@@ -152,11 +152,6 @@ p {
   pointer-events: none;
 }
 
-.fade-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .shorts-title {
   text-align: center;
   color: #6a5acd;
@@ -224,6 +219,13 @@ p {
   display: block;
 }
 
+.short-caption {
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 8px;
+}
+
 @media (max-width: 480px) {
   .short-island {
     flex: 0 0 85%;
@@ -235,14 +237,6 @@ p {
 body {
   overflow-x: visible;
 }
-
-.short-caption {
-  text-align: center;
-  font-weight: 600;
-  color: #ffffff;
-  margin-top: 8px;
-}
-
 .divider {
   position: relative;
   width: 100%;
