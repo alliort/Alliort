@@ -157,11 +157,6 @@ p {
   pointer-events: none;
 }
 
-.fade-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .shorts-title {
   text-align: center;
   color: #6a5acd;
