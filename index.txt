@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="divider"></div>
+    
     <h1>Welcome to my website!</h1>
     <p style="color:#ffffff;">I am alliort (aka PixelV0y4ger),</p>
     <p style="color:#ffffff;">You might know me for making Gorilla Tag videos.</p>
@@ -17,6 +19,7 @@
 
 <h2 style="color:#6a5acd;">My music!</h2>
 
+<div class="video-row-music">
 <div class="video-row-susie">
  <div class="video-island-susie">
     <div class="video-wrapper-susie">
@@ -111,6 +114,7 @@
 const button = document.getElementById('toggle-shorts');
 const shortsTitle = document.querySelector('.shorts-title');
 const shortsContainer = document.querySelector('.shorts-container');
+const divider = document.getElementById('divider');
 
 let visible = true;
 
@@ -120,10 +124,12 @@ button.addEventListener('click', () => {
   if (visible) {
     shortsContainer.classList.remove('fade-hidden');
     shortsTitle.classList.remove('fade-hidden');
+    divider.classList.remove('fade-hidden');
     button.textContent = 'Hide Shorts';
   } else {
     shortsContainer.classList.add('fade-hidden');
     shortsTitle.classList.add('fade-hidden');
+    divider.classList.remove('fade-hidden');
     button.textContent = 'Show Shorts';
   }
 });
