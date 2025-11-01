@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 style="color:#6a5acd;">Welcome to my website!</h1>
+    <h1>Welcome to my website!</h1>
     <p style="color:#ffffff;">I am alliort (aka PixelV0y4ger),</p>
     <p style="color:#ffffff;">You might know me for making Gorilla Tag videos.</p>
     <script src="script.js"></script>
