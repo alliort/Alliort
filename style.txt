@@ -8,7 +8,7 @@ body {
 h1 {
     color: #6a5acd;
 }
-
+ 
 h2 {
   color: inherit;
 }
