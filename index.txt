@@ -15,14 +15,22 @@
 
 <div class="divider"></div>
 
-<div class="video-row">
- <div class="video-island">
-    <div class="video-wrapper">
+<h2 style="color:#6a5acd;">My music!</h2>
+
+<div class="video-row-susie">
+ <div class="video-island-susie">
+    <div class="video-wrapper-susie">
       <iframe src="https://www.youtube.com/embed/560Xpwjd97w" title="Video 1" frameborder="0" allowfullscreen></iframe>
     </div>
-    <div class="video-title">Susalovania</div>
+    <div class="video-title-susie">Susalovania</div>
   </div>
+</div>
+
+<div class="divider"></div>
+
+<h2 style="color:#6a5acd;">My videos!</h2>
     
+<div class="video-row">
   <div class="video-island">
     <div class="video-wrapper">
       <iframe src="https://www.youtube.com/embed/ngcJWMeqxUw" title="Video 2" frameborder="0" allowfullscreen></iframe>
@@ -47,7 +55,7 @@
 
 <div class="divider"></div>
 
-<h2>Subscribe!</h2>
+<h2 style="color:#6a5acd;">Subscribe!</h2>
     
 <a href="https://www.youtube.com/@alliortVR" target="_blank" class="youtube-button">
     Subscribe
@@ -59,7 +67,7 @@
 
  <button id="toggle-shorts">Hide Shorts</button>
     
-  <h1>class="shorts-title">My YouTube shorts!</h1>
+  <h1 class="shorts-title">My YouTube shorts!</h1>
   <div class="shorts-container">
 <div class="short-island">
   <div class="short-video-wrapper">
