@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    color: #ffca00;
+    color: #ff5500;
 }
 
 h2 {
@@ -157,14 +157,9 @@ p {
   pointer-events: none;
 }
 
-.fade-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .shorts-title {
   text-align: center;
-  color: #ffca00;
+  color: #ff5500;
   font-size: 2rem;
   margin-top: 40px;
   margin-bottom: 10px;
@@ -229,6 +224,13 @@ p {
   display: block;
 }
 
+.short-caption {
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 8px;
+}
+
 @media (max-width: 480px) {
   .short-island {
     flex: 0 0 85%;
@@ -239,13 +241,6 @@ p {
 
 body {
   overflow-x: visible;
-}
-
-.short-caption {
-  text-align: center;
-  font-weight: 600;
-  color: #ffffff;
-  margin-top: 8px;
 }
 
 .divider {
