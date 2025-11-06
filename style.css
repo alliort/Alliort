@@ -208,7 +208,7 @@ p {
 }
 
 .twitch-button:hover {
-    background-color: #772ce8;
+    background-color: #9b6dff;
     transform: scale(1.05);
     box-shadow: 2px 4px 12px rgba(1,0.5,0,0.3);
     border-radius: 12px;
