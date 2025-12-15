@@ -202,15 +202,11 @@ p {
     border-radius: 0px;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
     transition: 
-      background-color 0.2s ease, 
-      transform 0.1s ease, 
-      box-shadow 0.2s ease,
+      background-color 0.2s ease
 }
 
 .twitch-button:hover {
     background-color: #9b6dff;
-    transform: scale(1.05);
-    box-shadow: 2px 4px 12px rgba(1,0.5,0,0.3);
 }
 
 #toggle-shorts {
