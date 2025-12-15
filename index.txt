@@ -54,6 +54,35 @@
     </div>
     <div class="video-title">Gorilla Tag's 2025 Halloween update!</div>
   </div>
+
+  <div class="video-island">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/gEfvaGErfB8" title="Video 5" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-title">Gorilla Tag's 2025 Christmas update!</div>
+  </div>
+
+<div class="video-island">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/NiuOS--_huQ" title="Video 6" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-title">The Goat Man is TERRIFYING... | Minecraft: From the Fog #1</div>
+</div>
+
+<div class="video-island">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/cGqBRuPUsFs" title="Video 7" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-title">Minecraft Chimes Mod! | Project MR</div>
+</div>
+
+<div class="video-island">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/C8fYEAbXVgY" title="Video 8" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-title">Minecraft Compressed Blocks Mod & Mob Heads Mod!! | Project MR</div>
+</div>
+    
 </div>
 
 <div class="divider"></div>
@@ -65,6 +94,16 @@
 </a>
     
 <h3>(sends you to my channel)</h3>
+
+<div class="divider"></div>
+
+<h2 style="color:#6a5acd;">Follow me on Twitch!</h2>
+
+<a href="https://www.twitch.tv/p1xelv0y4ger" target="_blank" class="twitch-button">
+    Follow
+</a>
+
+<h3>(sends you to my Twitch)</h3>
 
 <div class="divider"></div>
 
