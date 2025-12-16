@@ -162,26 +162,26 @@
 </html>
 
 <script>
-const button = document.getElementById('toggle-shorts');
-const shortsTitle = document.querySelector('.shorts-title');
-const shortsContainer = document.querySelector('.shorts-container');
-const divider = document.getElementById('divider');
+const button = document.getElementById('toggle-shorts')
+const shortsTitle = document.querySelector('.shorts-title')
+const shortsContainer = document.querySelector('.shorts-container')
+const divider = document.getElementById('divider')
 
-let visible = true;
+let visible = true
 
 button.addEventListener('click', () => {
-  visible = !visible;
+  visible = !visible
 
   if (visible) {
-    shortsContainer.classList.remove('fade-hidden');
-    shortsTitle.classList.remove('fade-hidden');
-    divider.classList.remove('fade-hidden');
-    button.value = 'Hide Shorts';
+    shortsContainer.classList.remove('fade-hidden')
+    shortsTitle.classList.remove('fade-hidden')
+    divider.classList.remove('fade-hidden')
+    button.value = 'Hide Shorts'
   } else {
-    shortsContainer.classList.add('fade-hidden');
-    shortsTitle.classList.add('fade-hidden');
-    divider.classList.remove('fade-hidden');
-    button.value = 'Show Shorts';
+    shortsContainer.classList.add('fade-hidden')
+    shortsTitle.classList.add('fade-hidden')
+    divider.classList.remove('fade-hidden')
+    button.value = 'Show Shorts'
   }
-});
+})
 </script>
